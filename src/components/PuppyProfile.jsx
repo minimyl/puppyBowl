@@ -1,4 +1,6 @@
 import React from "react";
+import DogOne from "./Profile1";
+
 
 const PuppyProfile = (props) => {
   return (
@@ -6,28 +8,21 @@ const PuppyProfile = (props) => {
       {props.puppy.map((puppy, index) => {
         return (
           <table id="dogList" key={puppy.id}>
-            <div id="listId">
-              <tbody>
-                <tr>
-                  <td> {puppy.name} </td>
-                  <td> {puppy.id} </td>
-                </tr>
-              </tbody>
-            </div>
+            <tbody>
+            <DogOne />
+              <tr>
+                <td> {puppy.name} </td>
+                <td> {puppy.id} </td>
+              </tr>
+            </tbody>
+            
           </table>
         );
       })}
-
-      <div>
-        <img
-          src="https://media.emirates247.com/images/2013/06/Ugliest%20dog/25.JPG"
-          alt=""
-          height="200"
-        />
-      </div>
     </div>
+    
   );
 };
-// key={contact.id}>
+
 
 export default PuppyProfile;

@@ -3,7 +3,7 @@ import React from "react";
 const Navbar = () => {
   return (
     <div id="navbar">
-      <h2>Puppy Bowl</h2>
+      <h2>The Greatest Puppy Bowl</h2>
       <form>
         <div id="submitBox">
           <div id="searchForm">

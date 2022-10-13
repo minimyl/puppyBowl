@@ -1,6 +1,8 @@
 import React, {useState} from "react";
 import {Navbar} from "./";
 import PuppyProfile from './PuppyProfile'
+import DogOne from "./Profile1";
+
 
 
 const Puppies = [
@@ -8,6 +10,7 @@ const Puppies = [
   {name: "Sky", id: 559},
   {name: "Pablo", id: 600},
   {name: "Kye", id: 601}
+
 ];
 
 
@@ -17,6 +20,7 @@ const Main = () => {
     <div id="main">
     <Navbar/>
     <PuppyProfile puppy={puppy} />
+    
   </div>
   );
 };
