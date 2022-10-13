@@ -1,5 +1,7 @@
 import React, {useState} from "react";
 import {Navbar} from "./";
+import PuppyProfile from './PuppyProfile'
+
 
 const Puppies = [
   {name: "Tart", id: 558},
@@ -10,10 +12,10 @@ const Puppies = [
 
 
 const Main = () => {
-  const[contestants, setContestants] = useState(Puppies)
   return (
     <div id="main">
     <Navbar/>
+    <PuppyProfile />
   </div>
   );
 };

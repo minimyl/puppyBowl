@@ -5,18 +5,19 @@ const Navbar = () => {
     <div id="navbar">
       <h2>Puppy Bowl</h2>
       <form>
-        <fieldset>
+        <div id="submitBox">
+          <div id="searchForm">
             <label>
-                <p>Name:</p>
-                <input name="name"/>                
+              <p>Name:</p>
+              <input name="name" />
             </label>
             <label>
-                <p>Breed:</p>
-                <input name="name"/>                
+              <p>Breed:</p>
+              <input name="name" />
             </label>
-        </fieldset>
+          </div>
+        </div>
         <button type="submit">Submit here:</button>
-        
       </form>
     </div>
   );

@@ -14,5 +14,17 @@ body {
   background-color: #222222;
   color: white;
   display: flex;
+  justify-content: space-around;
   align-items: center;
 }
+
+#submitBox {
+  border: 2px solid white;  
+}
+#searchForm {
+  width: 600px;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 10px;
+}
+
