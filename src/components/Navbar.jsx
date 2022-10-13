@@ -1,11 +1,25 @@
 import React from "react";
 
-const NavBar = () => {
+const Navbar = () => {
   return (
     <div id="navbar">
-      <h2> I am navbar</h2>
+      <h2>Puppy Bowl</h2>
+      <form>
+        <fieldset>
+            <label>
+                <p>Name:</p>
+                <input name="name"/>                
+            </label>
+            <label>
+                <p>Breed:</p>
+                <input name="name"/>                
+            </label>
+        </fieldset>
+        <button type="submit">Submit here:</button>
+        
+      </form>
     </div>
   );
 };
 
-export default NavBar;
+export default Navbar;

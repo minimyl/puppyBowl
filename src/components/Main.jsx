@@ -1,15 +1,19 @@
-import React from "react";
-import {NavBar} from "./NavBar";
+import React, {useState} from "react";
+import {Navbar} from "./";
+
+const Puppies = [
+  {name: "Tart", id: 558},
+  {name: "Sky", id: 559},
+  {name: "Pablo", id: 600},
+  {name: "Kye", id: 601}
+];
+
 
 const Main = () => {
+  const[contestants, setContestants] = useState(Puppies)
   return (
     <div id="main">
-    <div id="navbar">
-      <div>Contact List</div>
-    </div>
-    <div id="container">
-      {/* your components here */}
-    </div>
+    <Navbar/>
   </div>
   );
 };
