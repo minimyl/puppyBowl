@@ -12,10 +12,11 @@ const Puppies = [
 
 
 const Main = () => {
+  const [puppy, setPuppy] = useState(Puppies)
   return (
     <div id="main">
     <Navbar/>
-    <PuppyProfile />
+    <PuppyProfile puppy={puppy} />
   </div>
   );
 };
