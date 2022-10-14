@@ -1,14 +1,21 @@
-import React from 'react'
-
+import React from "react";
 
 const PuppyRow = (props) => {
-  const player = props.player
-return (
-  <div> 
-        {player.name}
+  const player = props.player;
+  return (
+    <div>
+      {player.name}
+      {player.id}
+      <button
+        onClick={(e) => {
+          e.preventDefault();
+          props.getSinglePuppy(player.id); //This gets up the puppy details that we wanted without Router
+        }}
+      >
+        See Details
+      </button>
+    </div>
+  );
+};
 
-  </div>
-)
-}
-
-  export default PuppyRow;
+export default PuppyRow;

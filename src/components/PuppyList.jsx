@@ -3,13 +3,12 @@ import PuppyRow from "./PuppyRow";
 
 const PuppyList = (props) => {
   const players = props.players;
-  console.log(players)
   return (
     <div>
       {players.length ? (
         players.map((player) => {
           return(
-          <PuppyRow key={`player-${player.id}`} player={player}/>)
+          <PuppyRow key={`player-${player.id}`} getSinglePuppy={props.getSinglePuppy} player={player}/>) //New stuff in hear from nic
         })
       ) : (
         <div>Loading Players.</div>
