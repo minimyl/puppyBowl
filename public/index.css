@@ -31,39 +31,6 @@ form {
   margin-top: 10px;
   border: 2px solid white
 }
-#dogList {
-  font-size: 20px;
-  font-weight: bold;
-  
-  
-}
-#test {
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 70px;
-  display: flex;
-  justify-content: space-between;
-}
-#testImage {
-margin-left: 45px;
-margin-top: 15px;
-margin-bottom: 15px; 
-}
-#detailsBtn {
-  display: flex;
-  align-items: center;
-  max-width: 100%;
-}
-table {
-  border-collapse: collapse; 
-  box-shadow: 0 0 12px black;
-  border-radius: 15px;
-}
 
-th,
-td {
-  padding: 5px;
-  color: white;
-}
 
 

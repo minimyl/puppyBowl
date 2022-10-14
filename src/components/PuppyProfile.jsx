@@ -9,13 +9,12 @@ const PuppyProfile = (props) => {
         return (
           <table id="dogList" key={puppy.id}>
             <tbody>
+            <DogOne />
               <tr>
                 <td> {puppy.name} </td>
-                <td> {puppy.id} </td> 
+                <td> {puppy.id} </td>
               </tr>
             </tbody>
-            <DogOne />
-            <button id="detailsBtn">See Details</button>
           </table>
         );
       })}

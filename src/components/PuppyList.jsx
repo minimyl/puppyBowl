@@ -1,16 +1,21 @@
-import React, { useEffect } from "react";
+import React from "react";
+import PuppyRow from "./PuppyRow";
 
-function GetData() {
-  useEffect(() => {
-    fetch("https://fsa-puppy-bowl.herokuapp.com/api/2209-FTB-ET-WEB-PT/players")
-    .then(response => response.json())
-    .then(json => console.log(json))
+const PuppyList = (props) => {
+  const players = props.players;
+  console.log(players)
+  return (
+    <div>
+      {players.length ? (
+        players.map((player) => {
+          return(
+          <PuppyRow key={`player-${player.id}`} player={player}/>)
+        })
+      ) : (
+        <div>Loading Players.</div>
+      )}
+    </div>
+  );
+};
 
-  }, []);
-  return(
-  <div>
-    PuppyList 
-  </div>)
-}
-
-export default GetData;
+export default PuppyList;
