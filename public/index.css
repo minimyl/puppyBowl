@@ -48,5 +48,14 @@ padding-right: 30px;
 #searchButton{
   margin: 20px;
 }
+.puppyImage{
+  width: 100px;
+  height: auto;
+}
+#puppyName, #puppyId{
+  display: inline;
+  width: 49%;
+}
+
 
 

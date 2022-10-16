@@ -2,10 +2,16 @@ import React from "react";
 
 const PuppyRow = (props) => {
   const player = props.player;
+  console.log(player);
   return (
     <div id="puppyContestant">
-      {player.name}
-      {player.id}
+      <div id="puppyName">
+        {player.name}
+      </div>
+      <div id="puppyId">
+        {player.id}
+      </div>
+      <img src={player.imageUrl} className="puppyImage" />
       <button
         onClick={(e) => {
           e.preventDefault();
