@@ -17,7 +17,7 @@ const Navbar = () => {
             </label>
           </div>
         </div>
-        <button type="submit">Submit here:</button>
+        <button type="submit" id="searchButton">Submit here:</button>
       </form>
     </div>
   );

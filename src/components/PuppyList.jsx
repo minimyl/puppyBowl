@@ -4,7 +4,7 @@ import PuppyRow from "./PuppyRow";
 const PuppyList = (props) => {
   const players = props.players;
   return (
-    <div>
+    <div id="puppyList">
       {players.length ? (
         players.map((player) => {
           return(

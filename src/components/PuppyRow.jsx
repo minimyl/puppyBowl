@@ -3,7 +3,7 @@ import React from "react";
 const PuppyRow = (props) => {
   const player = props.player;
   return (
-    <div>
+    <div id="puppyContestant">
       {player.name}
       {player.id}
       <button

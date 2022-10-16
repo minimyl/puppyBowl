@@ -36,8 +36,6 @@ const Main = () => {
     <Navbar />{singleDog.id ? <div>insertpuppy details component</div>: //new Stuff from Nic
         <PuppyList getSinglePuppy={getSinglePuppy} players={players}/>
     }
-  
-
   </div>
   );
 };
