@@ -1,4 +1,5 @@
 import React from "react";
+import PuppyProfile from "./PuppyProfile";
 
 const PuppyRow = (props) => {
   const player = props.player;
@@ -16,9 +17,11 @@ const PuppyRow = (props) => {
         onClick={(e) => {
           e.preventDefault();
           props.getSinglePuppy(player.id); //This gets up the puppy details that we wanted without Router
+          PuppyProfile()
         }}
       >
         See Details
+        
       </button>
     </div>
   );

@@ -8,6 +8,7 @@ body {
 
 #navbar {
   font-family: 'Poller One', Arial, sans-serif;
+  font-weight: bold;
   flex-grow: 1;
   max-height: 10%;
   min-height: 40px;
@@ -44,12 +45,14 @@ padding-right: 30px;
 #puppyContestant{
   display: flex;
   flex-direction: column;
+  border: 2px solid black;
+  margin: 10px;
 }
 #searchButton{
   margin: 20px;
 }
 .puppyImage{
-  width: 100px;
+  width: 150px;
   height: auto;
 }
 #puppyName, #puppyId{
