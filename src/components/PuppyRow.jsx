@@ -1,5 +1,5 @@
 import React from "react";
-import PuppyProfile from "./PuppyProfile";
+
 
 const PuppyRow = (props) => {
   const player = props.player;

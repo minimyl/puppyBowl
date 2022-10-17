@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Navbar } from "./";
 import PuppyList from "./PuppyList";
-import PuppyProfile from "./PuppyProfile"
+import PuppyRow from "./PuppyRow";
 
 const Main = () => {
   const [players, setPlayers] = useState([]);
@@ -31,8 +31,9 @@ const Main = () => {
     <div id="main">
       <Navbar />
       {singleDog.id ? (
-          <div><PuppyProfile/></div> //new Stuff from Nic
+        <PuppyRow player={singleDog} class="selectedPuppy" />
       ) : (
+        //new Stuff from Nic
         <PuppyList getSinglePuppy={getSinglePuppy} players={players} />
       )}
     </div>

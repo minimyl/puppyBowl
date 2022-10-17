@@ -59,6 +59,13 @@ padding-right: 30px;
   display: inline;
   width: 49%;
 }
-
+#selectedPuppy {
+  display: flex;
+  align-items: center;
+}
+.selectedPuppy {
+  display: flex;
+  justify-content: center;
+}
 
 
