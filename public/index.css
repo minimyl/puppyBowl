@@ -1,13 +1,13 @@
 body {
-  font-family: 'Raleway', Arial, sans-serif;
+  font-family: "Raleway", Arial, sans-serif;
   height: 100vh;
   width: 100vw;
   margin: 0;
   background: linear-gradient(to bottom right, pink, gray);
-  }
+}
 
 #navbar {
-  font-family: 'Poller One', Arial, sans-serif;
+  font-family: "Poller One", Arial, sans-serif;
   font-weight: bold;
   flex-grow: 1;
   max-height: 10%;
@@ -17,7 +17,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-bottom: 10px
+  padding-bottom: 10px;
 }
 
 form {
@@ -30,32 +30,31 @@ form {
   justify-content: space-around;
   padding-bottom: 10px;
   margin-top: 10px;
-  border: 2px solid white
+  border: 2px solid white;
 }
 #puppyList {
-display: flex;
-justify-content: center;
-flex-direction: row;
-justify-content: space-between;
-padding-left: 30PX;
-padding-right: 30px;
-
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;  
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
-#puppyContestant{
+#puppyContestant {
   display: flex;
   flex-direction: column;
   border: 2px solid black;
   margin: 10px;
 }
-#searchButton{
+#searchButton {
   margin: 20px;
 }
-.puppyImage{
+.puppyImage {
   width: 150px;
   height: auto;
 }
-#puppyName, #puppyId{
+#puppyName,
+#puppyId {
   display: inline;
   width: 49%;
 }
@@ -63,9 +62,19 @@ padding-right: 30px;
   display: flex;
   align-items: center;
 }
-.selectedPuppy {
-  display: flex;
-  justify-content: center;
+#footer {
+  flex-grow: 1;
+  background-color: #222222;
+  color: white;
+  width: 100%;
+  position:absolute;
+    width:100%;
+    bottom:-20px;
 }
-
-
+#FooterButton {
+  display: flex;
+  width: 100%;
+  padding-left: 40px;
+  justify-content: center;  
+  
+}
