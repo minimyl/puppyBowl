@@ -11,7 +11,6 @@ const Footer = () => {
           <button>FullStack Academy Repo</button>
           <button>List of Possible Contestants</button>
         </ol>
-          
       </div>
     </div>
   );
