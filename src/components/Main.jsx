@@ -7,6 +7,7 @@ import Footer from "./Footer";
 const Main = () => {
   const [players, setPlayers] = useState([]);
   const [singleDog, setSingleDog] = useState({}); //New Stuff from nic
+  const [searchResult, setSearchResults] = useState([]);
 
 
   
@@ -26,18 +27,25 @@ const Main = () => {
     setSingleDog(puppy);
   }; //New Stuff from Nic
 
+  const puppyResult = (data) => {
+    setSearchResults(data) 
+  }
+  
+
   useEffect(() => {
     getPuppy();
   }, []);
 
+  
   return (
     <div id="main">
-      <Navbar players={players}/>
+      <Navbar players={players} result={puppyResult}/>
+      
       {singleDog.id ? (
         <PuppyRow player={singleDog} class="selectedPuppy" />
       ) : (
         //new Stuff from Nic
-        <PuppyList getSinglePuppy={getSinglePuppy} players={players} />
+        <PuppyList getSinglePuppy={getSinglePuppy} players={searchResult.length > 0 ? searchResult: players}/>
       )}
       <Footer />
     </div>

@@ -3,7 +3,7 @@ import React from "react";
 
 const PuppyRow = (props) => {
   const player = props.player;
-  console.log(player);
+
   return (
     <div id="puppyContestant">
       <div id="puppyName">
