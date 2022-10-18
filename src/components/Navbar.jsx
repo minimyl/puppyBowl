@@ -1,7 +1,15 @@
 import React, {useState} from "react";
+const input = document.querySelector('input');
+const result = getPuppy()
+input.addEventListener('change', updateValue);
 
+function updateValue(e) {
+  log.textContent=e.target.value
+}
 
-const Navbar = () => {
+const Navbar = (props) => {
+  const [searchPuppy, setSearchPuppy] = useState([])
+
   return (
     <div id="navbar">
       <h2>The Greatest Puppy Bowl</h2>

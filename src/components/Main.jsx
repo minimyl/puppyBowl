@@ -32,7 +32,7 @@ const Main = () => {
 
   return (
     <div id="main">
-      <Navbar />
+      <Navbar players={players}/>
       {singleDog.id ? (
         <PuppyRow player={singleDog} class="selectedPuppy" />
       ) : (
